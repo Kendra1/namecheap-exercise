@@ -18,8 +18,8 @@ export const SearchForm: FunctionComponent<{
     };
 
     return (
-        <Form className="row mb-3">
-            <div className="mb-3 input-group w-50 col-6 offset-3 ">
+        <Form className="form-container row mb-3 text-center">
+            <div className="mb-3 input-group w-50">
                 <span className="input-group-append">
                     <i className="fa fa-search">
                         <svg
@@ -41,7 +41,7 @@ export const SearchForm: FunctionComponent<{
                     onChange={(e) => setSearchQuery(e.target.value)}
                 />
             </div>
-            <Col xs={6} className="offset-3 text-center">
+            <Col xs={12} className="mb-5">
                 <Button className="btn-dark" onClick={handleSearchMovies}>
                     Search
                 </Button>

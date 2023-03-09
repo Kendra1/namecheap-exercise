@@ -28,7 +28,7 @@ export default function Home() {
         movies && (
             <>
                 <Container className="main-container">
-                    <h1 className="text-center">Movie List App</h1>
+                    <h1 className="text-center mt-5 mb-5">Movie List App</h1>
                     <SearchForm searchMovies={searchMovies} />
                     <MovieList
                         movies={movies}

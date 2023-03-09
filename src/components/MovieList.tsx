@@ -10,14 +10,20 @@ export const MovieList: FunctionComponent<{
     return (
         <Container>
             <Row>
-                {movies.map((movie: IMovie) => (
-                    <Col key={movie.id} xs={12} sm={6} lg={4}>
-                        <Card
-                            movie={movie}
-                            setSelectedMovie={setSelectedMovie}
-                        />
+                {movies.length ? (
+                    movies.map((movie: IMovie) => (
+                        <Col key={movie.id} xs={12} sm={6} lg={4}>
+                            <Card
+                                movie={movie}
+                                setSelectedMovie={setSelectedMovie}
+                            />
+                        </Col>
+                    ))
+                ) : (
+                    <Col className="no-movies fs-5 text-center">
+                        No movies with given title are available.
                     </Col>
-                ))}
+                )}
             </Row>
         </Container>
     );

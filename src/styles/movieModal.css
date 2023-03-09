@@ -1,10 +1,6 @@
 .modal-dialog .header {
     border-bottom: none;
-    padding-top: 0;
-}
-
-.modal-dialog .header h1 {
-    text-align: center;
+    word-wrap: break-word;
 }
 
 .modal-dialog .poster {
@@ -25,6 +21,7 @@
 
 .modal-dialog .info h5 {
     margin-bottom: 40px;
+    word-wrap: break-word;
 }
 
 .modal-dialog .button-container {

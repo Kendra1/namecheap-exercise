@@ -1,3 +1,7 @@
+.form-container {
+    justify-content: center;
+}
+
 .input-group-append {
     position: absolute;
     z-index: 6;
@@ -8,4 +12,10 @@
 .search-field {
     padding-left: 30px !important;
     border-radius: 10px !important;
+}
+
+@media screen and (max-width: 992px) {
+    .form-container .input-group {
+        width: 75% !important;
+    }
 }

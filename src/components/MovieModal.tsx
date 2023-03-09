@@ -21,15 +21,15 @@ export const MovieModal: FunctionComponent<{
                 <div className="button-container">
                     <CloseButton onClick={closeModal} />
                 </div>
-                <Modal.Header className="header">
+                <Modal.Header className="header pt-0">
                     <div className="fs-1 text-center w-100">{movie.title}</div>
                 </Modal.Header>
                 <Modal.Body className="content">
                     <img className="poster" src={movie.backdropPath} />
                     <Container className="info text-center">
                         <h5>
-                            {movieYear}, {movie.genres.join("/")}, Guy
-                            {movie.direction}
+                            {movieYear}, {movie.genres.join("/")},
+                            {` ${movie.direction}`}
                         </h5>
                         <p>{movie.overview}</p>
                     </Container>
