@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card succesfull should render the component  1`] = `
+<div
+  className="card movie-card"
+  onClick={[Function]}
+>
+  <img
+    className="card-img-top poster"
+    src="https://image.tmdb.org/t/p/w500/dm06L9pxDOL9jNSK4Cb6y139rrG.jpg"
+  />
+  <div
+    className="card-body text-center"
+  >
+    <div
+      className="card-title title font-weight-bold fs-3 fw-bold"
+    >
+      Knock at the Cabin
+    </div>
+    <p
+      className="fs-5"
+    >
+      2023
+      <br />
+      Comedy/Drama
+    </p>
+    <div
+      className="card-text overview"
+    >
+      While vacationing at a remote cabin, a young girl and her two fathers are taken hostage by four armed strangers who demand that the family make an unthinkable choice to avert the apocalypse. With limited access to the outside world, the family must decide what they believe before all is lost.
+    </div>
+  </div>
+</div>
+`;

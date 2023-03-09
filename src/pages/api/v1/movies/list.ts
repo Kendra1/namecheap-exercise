@@ -1,10 +1,13 @@
-import type { NextApiRequest, NextApiResponse } from 'next'
+import { mapMovies } from "@/utils/movies";
+import type { NextApiRequest, NextApiResponse } from "next";
+import moviesList from "./data.json";
 
-const IMAGES_BASE_PATH = "https://image.tmdb.org/t/p/w500/"
-
-export default function handler(
-    req: NextApiRequest,
-    res: NextApiResponse
-) {
-    res.status(200).json({ status: 'OK' })
+export default function handler(req: NextApiRequest, res: NextApiResponse) {
+    res.status(200).json({
+        status: "OK",
+        movies: mapMovies(
+            moviesList.results,
+            process.env.IMAGES_BASE_PATH ?? ""
+        ),
+    });
 }
