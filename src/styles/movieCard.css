@@ -3,6 +3,12 @@
     padding-top: 30px;
 }
 
+@media screen and (max-width: 393px) {
+    .movie-card {
+        padding-top: 0px;
+    }
+}
+
 @media screen and (min-width: 576px) and (max-width: 1200px) {
     .movie-card {
         padding-top: 0;
@@ -31,4 +37,8 @@
     height: 80px;
     align-items: center;
     justify-content: center;
+}
+
+.movie-card .movie-year {
+    margin-bottom: 0;
 }

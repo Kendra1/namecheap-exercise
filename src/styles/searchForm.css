@@ -1,0 +1,11 @@
+.input-group-append {
+    position: absolute;
+    z-index: 6;
+    top: 5px;
+    left: 20px;
+}
+
+.search-field {
+    padding-left: 30px !important;
+    border-radius: 10px !important;
+}

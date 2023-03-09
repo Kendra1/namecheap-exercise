@@ -6,7 +6,7 @@ export const MovieModal: FunctionComponent<{
     movie: IMovie | null;
     closeModal: () => void;
 }> = ({ movie, closeModal }) => {
-    const movieDate: number | string = movie
+    const movieYear: number | string = movie
         ? new Date(movie.releaseDate).getFullYear()
         : "N/A";
     return (
@@ -14,6 +14,7 @@ export const MovieModal: FunctionComponent<{
             <Modal
                 show={!!movie}
                 size="lg"
+                onHide={closeModal}
                 aria-labelledby="contained-modal-title-vcenter"
                 centered
             >
@@ -26,10 +27,10 @@ export const MovieModal: FunctionComponent<{
                 <Modal.Body className="content">
                     <img className="poster" src={movie.backdropPath} />
                     <Container className="info text-center">
-                        <h3>
-                            {movieDate}, {movie.genreIds.join(", ")}, Guy
-                            Ritchie
-                        </h3>
+                        <h5>
+                            {movieYear}, {movie.genres.join("/")}, Guy
+                            {movie.direction}
+                        </h5>
                         <p>{movie.overview}</p>
                     </Container>
                 </Modal.Body>

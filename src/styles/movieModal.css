@@ -1,5 +1,6 @@
 .modal-dialog .header {
     border-bottom: none;
+    padding-top: 0;
 }
 
 .modal-dialog .header h1 {
@@ -22,8 +23,8 @@
     padding-top: 5%;
 }
 
-.modal-dialog .info h3 {
-    margin-bottom: 20px;
+.modal-dialog .info h5 {
+    margin-bottom: 40px;
 }
 
 .modal-dialog .button-container {

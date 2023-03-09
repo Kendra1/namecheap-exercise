@@ -1,10 +1,11 @@
 export interface IMovie {
     adult: boolean;
     backdropPath: string;
-    genreIds: number[];
+    genres: string[];
     id: number;
     originalLanguage: string;
     originalTitle: string;
+    direction: string;
     overview: string;
     popularity: number;
     posterPath: string;
@@ -18,10 +19,11 @@ export interface IMovie {
 export interface IMovieSnakeCase {
     adult: boolean;
     backdrop_path: string;
-    genre_ids: number[];
+    genres: string[];
     id: number;
     original_language: string;
     original_title: string;
+    direction: string;
     overview: string;
     popularity: number;
     poster_path: string;

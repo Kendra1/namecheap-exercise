@@ -18,11 +18,14 @@ exports[`Card succesfull should render the component  1`] = `
       Knock at the Cabin
     </div>
     <p
-      className="fs-5"
+      className="fs-5 movie-year"
     >
       2023
-      <br />
-      Comedy/Drama
+    </p>
+    <p
+      className="fs-5 movie-genres"
+    >
+      Horror/Mystery/Thriller
     </p>
     <div
       className="card-text overview"

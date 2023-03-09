@@ -1,6 +1,7 @@
 import "@/styles/globals.css";
 import "@/styles/movieCard.css";
 import "@/styles/movieModal.css";
+import "@/styles/searchForm.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import type { AppProps } from "next/app";
 import Head from "next/head";
